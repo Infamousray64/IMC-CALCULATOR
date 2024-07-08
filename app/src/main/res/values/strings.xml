@@ -2,4 +2,8 @@
     <string name="app_name">IMCCalculator</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
+    <string name="height">Altura</string>
+    <string name="Weight">Peso</string>
+
+
 </resources>
