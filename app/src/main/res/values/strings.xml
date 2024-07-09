@@ -4,6 +4,6 @@
     <string name="female">Mujer</string>
     <string name="height">Altura</string>
     <string name="Weight">Peso</string>
-
+    <string name="Age">Edad</string>
 
 </resources>

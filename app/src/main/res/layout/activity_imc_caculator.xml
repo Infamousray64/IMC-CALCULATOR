@@ -165,6 +165,7 @@
                 android:layout_height="wrap_content"
                 android:hint="60"
                 android:maxLength="3"
+                android:maxLines="1"
                 android:textColor="@color/white"
                 android:textColorHint="@color/title_text"
                 android:textSize="38sp"
@@ -177,16 +178,18 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/btnSubtracrweight"
+                    android:id="@+id/btnSubtracWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
+                    app:fabCustomSize="45dp"
                     android:src="@drawable/ic_subtrac"
                     app:tint="@color/white"
                     app:backgroundTint="@color/background_fab" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/btnPlusweight"
+                    android:id="@+id/btnPlusWeight"
+                    app:fabCustomSize="45dp"
                     android:src="@drawable/ic_plus"
                     app:tint="@color/white"
                     android:layout_width="wrap_content"
@@ -209,7 +212,60 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/viewWeight"
         app:layout_constraintTop_toBottomOf="@+id/viewHeight">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Age"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="18"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/title_text"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnSubtracAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    app:fabCustomSize="45dp"
+                    android:src="@drawable/ic_subtrac"
+                    app:tint="@color/white"
+                    app:backgroundTint="@color/background_fab" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnPlusAge"
+                    app:fabCustomSize="45dp"
+                    android:src="@drawable/ic_plus"
+                    app:tint="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="@color/background_fab" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
