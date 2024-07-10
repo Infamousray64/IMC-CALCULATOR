@@ -5,5 +5,6 @@
     <string name="height">Altura</string>
     <string name="Weight">Peso</string>
     <string name="Age">Edad</string>
+    <string name="Calculate">Calcular</string>
 
 </resources>
