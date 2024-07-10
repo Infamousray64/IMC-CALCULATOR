@@ -124,6 +124,9 @@
                 android:id="@+id/rsHeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/background_fab"
+                app:thumbColor="@color/slider"
+                app:haloColor="@color/slider"
                 android:stepSize="1"
                 android:valueFrom="120"
                 android:valueTo="200" />
@@ -268,6 +271,18 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/Calculate"
+        android:backgroundTint="@color/background_fab"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
