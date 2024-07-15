@@ -4,11 +4,13 @@ import android.content.Intent
 import android.icu.text.DecimalFormat
 import android.os.Bundle
 import android.util.Range
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
+import androidx.core.view.updatePadding
 import com.example.imccalculator.R.id.viewMale
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
@@ -43,7 +45,15 @@ class ImcCaculatorActivity : AppCompatActivity() {
         initComponent();
         initListeners();
         initUI();
+        findViewById<View>(R.id.main).apply {
+            setOnApplyWindowInsetsListener { view, insets ->
+                // Aplicar padding para respetar el área de la barra de estado y la barra de navegación
+                view.updatePadding(top = insets.systemWindowInsetTop, bottom = insets.systemWindowInsetBottom)
+                insets.consumeSystemWindowInsets()
+            }
+        }
     }
+
 
     private fun initComponent() {
         viewMale = findViewById(R.id.viewMale);
@@ -63,13 +73,12 @@ class ImcCaculatorActivity : AppCompatActivity() {
 
     private fun initListeners() {
         viewMale.setOnClickListener {
-            changeGender();
-            setGenderColor();
+            changeGender(isMale = true)
+            setGenderColor()
         }
         viewFemale.setOnClickListener {
-            changeGender();
-            setGenderColor();
-
+            changeGender(isMale = false)
+            setGenderColor()
         }
 
         rsHeight.addOnChangeListener { _, value, _ ->
@@ -123,10 +132,14 @@ class ImcCaculatorActivity : AppCompatActivity() {
         tvAge.text = currentAge.toString()
     }
 
-    private fun changeGender() {
-        isMaleSelected = !isMaleSelected;
-        isFemaleSelected = !isFemaleSelected;
-
+    private fun changeGender(isMale: Boolean) {
+        if (isMale) {
+            isMaleSelected = true
+            isFemaleSelected = false
+        } else {
+            isMaleSelected = false
+            isFemaleSelected = true
+        }
     }
 
     private fun setGenderColor() {

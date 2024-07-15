@@ -16,7 +16,10 @@
     <color name="background_fab">#FF8400</color>
     <color name="slider">#FF8400</color>
 
-
+    <color name="peso_bajo">#FFEB3B</color>
+    <color name="peso_normal">#4CAF50</color>
+    <color name="sobrepeso">#FF5722</color>
+    <color name="obesidad">#F44336</color>
 
 
 
