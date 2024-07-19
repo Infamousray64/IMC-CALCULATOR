@@ -9,6 +9,8 @@
     <string name="Result">Tu resultado</string>
     <string name="Recalculate">Re-calcular</string>
     <string name="error">error</string>
+    <string name="week">Semana</string>
+    <string name="edit">Editar</string>
 
     <string name="info">Calcula  tu  IMC   para tener  un  panorama inicial de tu estado fisico, puede ayudarte a  escoger  el  plan  de  ejercicios  indicado 💪🏼 </string>
 
@@ -25,5 +27,18 @@
     <string name="title_obesidad">Obesidad</string>
     <string name="description_obesidad">Estás en un rango de obesidad, es importante que consultes a un médico.</string>
 
+    <string name="search_hint">Buscar</string>
+
+    <string-array name="days_of_week_short">
+        <item>L</item>
+        <item>M</item>
+        <item>X</item>
+        <item>J</item>
+        <item>V</item>
+        <item>S</item>
+        <item>D</item>
+    </string-array>
+
+    <color name="selected_day_background">#FFC107</color>
 
 </resources>

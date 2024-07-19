@@ -8,9 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="background_component">#101E33</color>
+    <color name="background_component">#363A3E</color>
     <color name="backgorund_component_selected">#FF8400</color>
-    <color name="background_app">#0E0B20</color>
+    <color name="background_app">#1D1C1C</color>
     <color name="background_button">#EB1555</color>
     <color name="title_text">#FF8D8E98</color>
     <color name="background_fab">#FF8400</color>
