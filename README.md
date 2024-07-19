@@ -1,2 +1,2 @@
-# IMC CALCULATOR 📱
-> Proyecto de aplicativo android, desarrollo de una calculadora de indice de masa corporal para el calculo del peso ideal en base a la edad, la estatudra, el peso y el genero.
+#Muscleapp by Ray 📱
+> Proyecto de aplicativo android, desarrollo de una aplicación para el entrenamiento fisico que ofrece herramientas, rutinas y entrenamientos en el gimnasio, parque o desde casa.
